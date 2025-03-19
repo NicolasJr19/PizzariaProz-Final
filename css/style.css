@@ -1,0 +1,228 @@
+/*ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    padding-left: 5px;
+    box-sizing: border-box;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+    
+}
+body{
+    background-color: #f5efd7;
+    height: 100vh;
+    background-image: url(../img/fundo2.jpg);
+    max-width: 1280px;
+    margin: 0 auto;
+    
+}
+    
+p{
+    padding-bottom: 10px;
+    text-align: ;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;   
+}
+.flex{
+    display: flex;
+}
+/*ESTILO DO CABEÇALHO*/
+/*header{
+    background-image: url(../img/fundo.jpg);
+}*/
+.logo-principal{
+    padding: auto;
+}
+.logo{
+    text-align: center;
+}
+header img{
+    padding: 40px;
+    text-align: center;
+}
+header nav ul{
+    list-style-type: none;
+}
+header a{
+    color: brown;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover{
+    color: white;
+    transform: scale(1.05);
+   
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 100px;
+    text-align: center;
+    font-size: 18px;
+}
+h3 a{
+    color: brown;
+}
+/*ESTILO DO TOPO DO SITE*/
+section.topo-do-site{
+    padding: 40px 4%;
+}
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.topo-do-site h1{
+    color: brown;
+    font-size: 42px;
+    line-height: 40px;
+}
+.topo-do-site .txt-topo-site p{
+
+    color:black;
+    margin: 40px 0;
+   
+  }
+  h1 a{
+    text-decoration: none;
+    color: brown;
+  }
+  h1 a:hover{
+    color: white;
+  }
+  
+  .topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+  
+  } 
+  
+  @keyframes flutuar{
+    0% {
+      top: 0;
+    }
+    100%{
+      top: 30px;
+    }
+  }
+  
+  label{
+    display: inline-block;
+    padding: 0 110px;
+    text-align: center;
+    font-size: 18px;
+
+  }
+  .titulo {
+    text-align: center;
+}
+.botao-container {
+    text-align: center;
+}
+.label{
+    align-items: center;
+}
+form {
+    margin: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+.botao-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/*CARDAPIO*/
+.pizza-item{
+    max-width: 1280px;
+    margin: 0 auto; 
+    display: flex;  
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.pizza-title{
+    color: brown;
+    font-size: 30px;
+    padding-bottom: 20px ;
+}
+.pizzatitle{
+    color: brown;
+    font-size: 25px;
+}
+
+.descricao{
+    text-align: justify;
+    padding-bottom: 15px;
+    width: 700px;
+}
+
+.ingredientes{
+    display: block;
+    list-style: inside;
+    width: 700px ;
+    column-count: 2; 
+}
+
+.preco{
+    color: brown;
+    font-size: 25px;
+}
+
+.h1-cardapio{
+    color: brown;
+    text-align: center;
+}
+.pizza-img{
+    padding-left: 100px;
+    padding-top: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+/*SOBRE NÓS*/
+.sobre{
+    color: brown;
+    text-align: center;
+}
+#sobre{
+    text-align: justify;
+    padding: 30px;
+}
+#img-sobre{
+    padding-left: 450px;
+}
+
+
+
+/*RODAPÉ*/
+#rodape{
+    color: brown;
+    padding: 0px 100px 0px 100px;
+    text-align: center;
+}
+#rodape a{
+    text-decoration: none;
+    color: brown;
+    padding: 40px;
+}
+#rodape a:hover{
+    color: white;
+}
+
+.id{
+    text-align: center;
+}

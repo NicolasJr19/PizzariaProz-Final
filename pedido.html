@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+     <title>Cadastro</title>
+
+     <style>
+          #cadastropizza {
+               color: red;
+          }
+
+          body {
+               background-image: url(img/cadastro_logo.jpg);
+               background-size: cover;
+               background-repeat: no-repeat;
+               background-attachment: fixed;
+               text-align: center;
+
+          }
+
+          fieldset {
+               max-width: 1000px;
+               background: rgb(255, 255, 255);
+               padding: 20px;
+               border-radius: 20px;
+               border-color: #333;
+               background-color: transparent;
+          }
+
+          #fieldsetcadastro {
+               width: 1000;
+               display: block;
+               margin: auto;
+               place-items: center;
+               height: 430px;
+          }
+
+          input {
+               width: 300px;
+               height: 30px;
+               text-align: center;
+               border-color: #333;
+               border-radius: 10px;
+          }
+
+          #h1cadastro {
+               color: white;
+          }
+
+          #botaocadastro {
+               padding: 5px;
+               width: 100px;
+               cursor: pointer;
+               border-radius: 10px;
+               text-align: center;
+          }
+
+          button:hover {
+               transform: scale(1.01);
+               transition: 0.03s;
+          }
+          .menu-desktop{
+               color: aliceblue;
+          }
+        </style>
+
+          <script type="text/javascript" src="js/codigo.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="interface">  
+        <div class="logo">
+                <a href="#">
+            <img class="logo-principal" src="img/logo2.jpg" alt="Logo da Pizzaria Proz">
+                </a>
+        </div>
+
+        <br><br>
+        
+        <div>
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="index.html"> Início</a></li>
+                    <li><a href="pedido.html">Pedido</a></li>
+                    <li><a href="cardapio.html"> Cardápio</a></li>
+                    <li><a href="sobre.html"> Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+
+     <br><br>
+
+        <fieldset id="fieldsetcadastro">
+          <form name="cadastro" method="post" onsubmit="return testa_form();" action="#">
+               <h3 id="cadastropizza">Pedido</h3>
+               <p id="h1cadastro">
+               <h1 id="h1cadastro">Escolha seu pedido!</h1>
+               </p>
+
+               <div id="cadastro">
+                    <label for="nome" id="nome">
+                         <input id="nome" type="text" name="nome" placeholder="Nome Completo">
+                    </label>
+                    <br><br>
+
+                    <label for="tel" id="numero">
+                         <input id="numero" type="tel" name="numero" placeholder="DDD + Telefone" autocomplete="off" data-mask="cel" oninput="mascara(this)">
+                    </label>
+                    <br><br>
+                    
+                    <label for="email" id="email">
+                         <input id="email" type="email" name="email" placeholder="Email">
+                    </label>
+                    <br><br>
+                    
+                    <select name="Pedidos" id="pedidos">
+                         <option value="">Selecione o Pedido</option>
+                         <option value="">Franco com Catupiry</option>
+                         <option value="">Quatro Queijo</option>
+                         <option value="">Carne Seca</option>
+                         <option value="">Portuguesa</option>
+                    </select>
+
+               </div>
+               <br>
+               <button id="botaocadastro">Enviar</button>
+          </form>
+     </fieldset>
+
+</body>
+
+</html>
