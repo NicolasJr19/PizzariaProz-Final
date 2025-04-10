@@ -1,3 +1,5 @@
+const conteudo = document.getElementById("conteudo").innerHTML
+
 function testa_form() {
 
     var nome = document.forms ["cadastro"]["nome"].value;
@@ -71,4 +73,49 @@ function testa_form() {
        // Adiciona um hífen após o oitavo dígito, para formatar no padrão "(##)#####-####".
        if (v.length === 9) input.value += "-";
      }
+}
+
+function narrarDescricao() {
+     const conteudo = document.getElementById("conteudos");
+     const texto = conteudo.innerText;
+ 
+     const utterance = new SpeechSynthesisUtterance(texto);
+     utterance.lang = 'pt-BR';
+     window.speechSynthesis.speak(utterance);
+ }
+
+function narrarPizza(botao) {
+     window.speechSynthesis.cancel();
+ 
+     const pizzaItem = botao.closest('.pizza-item');
+     
+     // Esconde o botão antes de pegar o texto
+     botao.style.display = 'none';
+     
+     const texto = pizzaItem.innerText;
+     
+     // Mostra o botão de novo
+     botao.style.display = 'inline';
+ 
+     const utterance = new SpeechSynthesisUtterance(texto);
+     utterance.lang = 'pt-BR';
+     window.speechSynthesis.speak(utterance);
+ }
+
+ function narrarSobre() {
+     window.speechSynthesis.cancel();
+ 
+     const sobre = document.getElementById('sobre');
+     if (!sobre) return;
+ 
+     // Pega só os parágrafos e títulos dentro da seção principal
+     const paragrafos = Array.from(sobre.querySelectorAll('p, h2')).map(el => el.innerText).join(' ');
+ 
+     const utterance = new SpeechSynthesisUtterance(paragrafos);
+     utterance.lang = 'pt-BR';
+     window.speechSynthesis.speak(utterance);
+ }
+
+function alternarModoDaltonico() {
+    document.body.classList.toggle('modo-daltonico');
 }

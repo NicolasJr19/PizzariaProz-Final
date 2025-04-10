@@ -7,6 +7,33 @@
     font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
     
 }
+
+body.modo-daltonico {
+    background-color: #fdfdfd;
+    color: #000;
+}
+
+.modo-daltonico header,
+.modo-daltonico footer {
+    background-color: #000;
+    color: #fff;
+}
+
+.modo-daltonico .menu-desktop a {
+    color: #ffff00; /* Amarelo forte */
+}
+
+.modo-daltonico .pizza-item {
+    background-color: #e8e8e8;
+    border: 2px solid #000;
+}
+
+.modo-daltonico button {
+    background-color: #000;
+    color: #ffff00;
+    border: 2px solid #000;
+}
+
 body{
     background-color: #f5efd7;
     height: 100vh;
